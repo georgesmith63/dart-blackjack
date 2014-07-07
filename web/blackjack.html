@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blackjack</title>
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="blackjack.css">
+    
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="header">
+      <h1>
+        <a href="blackjack.html">blackjack
+          <img class="title-img" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/BlackJack6.jpg/1599px-BlackJack6.jpg"/>
+        </a>
+      </h1>
+      a blackjack test with dart language.<br/>
+      <a href="https://github.com/cnishina/dart-blackjack" target="_blank">
+        https://github.com/cnishina/dart-blackjack
+      </a>
+    </div>
+    
+    <br/><br/>
+    
+    <div class="play">
+      <h2>the dealer</h2>
+      <div id="dealercards"></div>
+      <div>sum: ?</div>
+      <h2>the user</h2>
+      <div id="usercards"></div>
+      
+      <div id="usersum"></div>
+      
+    <br/><br/>
+      <button class="btn btn-danger" id="userrestart">restart</button>
+      <button class="btn btn-primary" id="usersplit">split</button>
+      <button class="btn btn-info" id="userdouble">double</button>
+      <button class="btn btn-warning" id="userhit">hit</button>
+      <button class="btn btn-success" id="userstand">stand</button>
+      
+    </div>
+    
+      
+      
+    <div class="content">
+      <h2>how to play</h2>
+      
+      <p>The object of the game is to "beat the dealer", which can be done in a number of ways:</p>
+      <ul>
+      <li>Get 21 points on the player's first two cards (called a blackjack), without a dealer blackjack;</li>
+      <li>Reach a final score higher than the dealer without exceeding 21; or</li>
+      <li>Let the dealer draw additional cards until his or her hand exceeds 21.</li>
+      </ul>
+      <p>(source: <a href="http://en.wikipedia.org/wiki/Blackjack" target="_blank">blackjack - wikipedia</a>)</p>
+      <h2>strategy</h2>
+      
+      <p>Each blackjack game has a basic strategy, which is playing a hand of any total value against any dealer's up-card, which loses the least money to the house in the long term.</p>
+      <p>An example of basic strategy is shown in the table below, and includes the following parameters:</p>
+      <ul>
+      <li>Four to eight decks</li>
+      <li>The dealer stands on a soft 17</li>
+      <li>A double is allowed after a split</li>
+      <li>Only original bets are lost on dealer blackjack</li>
+      </ul>
+      <p>(source: <a href="http://en.wikipedia.org/wiki/Blackjack#Blackjack_strategy" target="_blank">blackjack - wikipedia</a>)</p>
+    </div>
+    
+    
+    
+    
+    <script type="application/dart" src="blackjack.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
