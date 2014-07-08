@@ -2,4 +2,3 @@ name: blackjack
 description: A sample web application
 dependencies:
   browser: any
-  blackjack:any
